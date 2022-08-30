@@ -12,147 +12,60 @@ body {
   font-family: cursive, sans-serif;
   font-weight: bold; }
 
-.header__logo {
-  box-shadow: 2px 8px 10px black;
-  width: 70px;
-  animation-name: logo;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite; }
-
-@keyframes logo {
-  from {
-    transform: rotate(0); }
-  to {
-    transform: rotate(360deg); } }
-
-.header {
+header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1.5rem;
   border-bottom: 1px solid #4d4c4c; }
+  header nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 10px; }
+    header nav ul li {
+      display: inline-block;
+      margin-left: 2rem; }
+      header nav ul li :hover {
+        color: #030202;
+        font-size: 15px;
+        transform: scale(1);
+        box-shadow: 1px 1px 10px black;
+        transform: rotate(10deg);
+        border-radius: 100px; }
+  header nav .header__logo {
+    box-shadow: 2px 8px 10px black;
+    width: 70px;
+    animation-name: logo;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; }
 
-.main {
+main {
   margin: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
   justify-items: center; }
-
-.main__logo {
-  width: 90%;
-  box-shadow: 2px 8px 10px black; }
-
-.main__info1 {
-  justify-self: left; }
-
-.main__info2 {
-  justify-self: right; }
-
-.main__sprinter {
-  justify-self: center;
-  width: 200px;
-  box-shadow: 2px 8px 10px black; }
-
-.div__btn {
-  display: inline-block;
-  color: white;
-  background-color: #421515;
-  padding: 0.5rem 2rem;
-  border-radius: 10px; }
-
-.header__nav ul li {
-  display: inline-block;
-  margin-left: 2rem; }
-
-header nav ul {
-  list-style: none;
-  margin: 10px;
-  padding: 10px; }
-
-header nav ul li:hover {
-  color: #030202;
-  font-size: 15px;
-  transform: scale(1);
-  box-shadow: 1px 1px 10px black;
-  transform: rotate(10deg);
-  border-radius: 100px; }
-
-.parrafo {
-  background-color: aqua; }
-
-.servicios__main {
-  display: flex;
-  justify-content: center; }
-
-.zonas__main {
-  color: #080707;
-  display: flex;
-  gap: 40px;
-  justify-content: center; }
-
-.zona {
-  padding: 5%;
-  display: flex;
-  gap: 40px; }
-
-.servicio {
-  margin: 30px;
-  /*padding: 5%;
+  main .main__logo {
+    width: 90%;
+    box-shadow: 2px 8px 10px black; }
+  main .main__info1 {
+    justify-self: left; }
+  main .main__info2 {
+    justify-self: right; }
+  main .main__sprinter {
+    justify-self: center;
+    width: 200px;
+    box-shadow: 2px 8px 10px black; }
+  main .contactos {
     display: flex;
-    gap: 40px;*/
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px; }
-
-h3 {
-  font-size: 2em; }
-
-p {
-  font-size: 1.25em; }
-
-.contacto {
-  color: black;
-  display: flex;
-  justify-content: center;
-  padding: 2.5rem;
-  transition: 2s; }
-
-.contacto:hover {
-  transform: scale(1.2); }
-
-.main__inicio {
-  height: 80vh;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 1.5fr 1.5fr;
-  grid-template-areas: "logoEmpresa parrafoUno" "parrafoDos sprinter2";
-  justify-content: center;
-  justify-items: center;
-  align-items: center; }
-
-.parrafoUno {
-  grid-area: parrafoUno; }
-
-.parrafoDos {
-  grid-area: parrafoDos; }
-
-.sprinter {
-  grid-area: sprinter; }
-
-.camioneta {
-  align-items: center; }
-
-.vehiculos {
-  margin: 30px;
-  text-align: center;
-  width: 90%;
-  display: grid;
-  grid-template-rows: 1fr;
-  align-items: center;
-  gap: 40px; }
+    padding: 1.5rem;
+    justify-content: center; }
+  main .contacto:hover {
+    transform: scale(1.2); }
 
 footer {
-  text-align: center; }
+  display: flex;
+  justify-content: center;
+  align-content: center; }
