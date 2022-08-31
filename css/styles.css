@@ -62,8 +62,6 @@ main {
     display: flex;
     padding: 1.5rem;
     justify-content: center; }
-  main .contacto:hover {
-    transform: scale(1.2); }
 
 footer {
   display: flex;

@@ -56,40 +56,36 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
-
     gap: 20px;
     justify-items: center;
-    .main__logo{
+        .main__logo{
         width: 90%;
         box-shadow: 2px 8px 10px black;
     }
-    .main__info1{
+        .main__info1{
         justify-self: left;
     }
-    .main__info2{
+        .main__info2{
         justify-self: right;
     }    
-    .main__sprinter{
+        .main__sprinter{
         justify-self: center;
         width: 200px;
         box-shadow: 2px 8px 10px black; 
+        }  
+            .contactos{
+            display: flex;
+            padding: 1.5rem;
+            justify-content: center;
         }
-    .contactos{
-        display: flex;
-        padding: 1.5rem;
-        justify-content: center;
-        
-    }
-    .contacto:hover{
-        transform: scale(1.2);
-    }
-    
-    
-}
+                  
+ }  
+ 
+
+
 
 footer{
     display: flex;
     justify-content: center;
     align-content: center;
 }
-
